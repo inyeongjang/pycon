@@ -9,7 +9,7 @@ from django.conf import settings
 from urllib3.util import Retry
 from requests.adapters import HTTPAdapter
 
-LOCAL_ASTRO_HTTP = "http://custom-admin:3002"
+LOCAL_ASTRO_HTTP = "https://custom-admin:3002"
 
 
 def astro_proxy(request, path):
