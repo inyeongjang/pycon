@@ -16,6 +16,7 @@ def render_template_from_string(
     env = Environment(
         trim_blocks=True,
         lstrip_blocks=True,
+        autoescape=True,  # Enable autoescaping to prevent XSS
     )
 
     if show_placeholders:
